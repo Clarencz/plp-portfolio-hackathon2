@@ -14,6 +14,10 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap"
     />
+    <script
+      src="https://kit.fontawesome.com/7691ab0bf0.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <button class="mobile-nav-toggle">
@@ -41,16 +45,23 @@
       <!-- ========HOME SECTION OF THE PAGE=============== -->
       <section id="Home" class="section home-section">
         <div class="terminal-container">
-          <div class="person">
+          <div class="person" aria-labelledby="about-heading">
             <div class="typing-container">
               <h1 id="about-heading" class="sr-only">About Clarence Mabeya</h1>
               <p class="typing-text command-text">
                 clarence_mabeya@Portfolio~:$ WHOAMI
               </p>
               <p class="command-output">
-                &gt; Clarence Kaloti Mabeya...<span class="caret"
+                &gt; Clarence Kaloti Mabeya...<span
+                  class="caret"
+                  aria-hidden="true"
+                ></span>
               </p>
-              <pre>
+              <pre
+                class="whoami-text"
+                role="img"
+                aria-label="Professional description"
+              >
                     &gt; Financial Analyst and Tech Explorer
                     &gt; Ethical Hacker in Training
                     &gt; I break to learn...I learn to build
@@ -60,38 +71,47 @@
             <section class="action-row">
               <a
                 href="/Assets/CV_Kaloti_Clarence_Mabeya.docx"
-                class="btn-download"
+                class="btn download"
               >
                 Download CV
               </a>
-              <div class="social-icons" role="list">
+              <div
+                class="social-icons"
+                role="list"
+                aria-label="social media links"
+              >
                 <a
                   href=""
                   target="_blank"
                   rel="noopener noreferrer"
                   title="Github Profile"
+                  ><i class="fa-brands fa-github"></i
                 ></a>
                 <a
                   href=""
                   target="_blank"
                   rel="noopener noreferrer"
                   title="Whatsapp"
+                  ><i class="fa-brands fa-whatsapp"></i
                 ></a>
                 <a
                   href=""
                   target="_blank"
                   rel="noopener noreferrer"
                   title="Linkedln"
+                  ><i class="fa-brands fa-linkedin"></i
                 ></a>
               </div>
             </section>
           </div>
-          <aside class="image-section">
+          <aside class="image-section" aria-labelledby="profile-image">
             <div class="box-image">
               <div class="item-image">
                 <img
                   src="/Image/profile.png"
                   alt="clarence kaloti mabeya - professional photograph"
+                  id="profile-image"
+                  loading="lazy"
                 />
               </div>
             </div>

@@ -236,11 +236,146 @@ main {
   z-index: 10;
 }
 .command-text {
-  font-family: "JetBrains", monospace;
+  font-family: "JetBrains Mono", monospace;
   color: #2ba74c;
   font-weight: 600;
   margin-bottom: 1rem;
   font-size: 1.1rem;
+}
+.command-output {
+  font-family: "JetBrains Mono" monospace;
+  color: #58a6ff;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+.caret {
+  display: inline-block;
+  width: 2px;
+  height: 1.2rem;
+  background: #2ba74c;
+  margin-left: 4px;
+  animation: blink-caret 1s step-end infinite;
+}
+.whoami-text {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #79c0ff;
+  white-space: pre-line;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  border-left: 3px solid #2ba74c;
+}
+@keyframes blink-caret {
+  50% {
+    background: transparent;
+  }
+}
+.action-row {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.btn.download {
+  background: linear-gradient(135deg, #1cbd47 0%, #238636 100%);
+  color: #000;
+  font-family: "JetBrains Mono", monospace;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(43, 167, 76, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  min-height: 44px; /* touch target size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn.download::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+.btn.download:hover::before {
+  left: 100%;
+}
+.btn.download:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(43, 167, 76, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+.social-icons {
+  display: flex;
+  gap: 2rem;
+}
+.social-icons .fa-brands {
+  width: 50px;
+  height: 30px;
+  background: linear-gradient(135deg, #21262d 0%, #596475 100%);
+  color: #58a6ff;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(88, 166, 255, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  min-height: 44px; /*Touch target size*/
+}
+/* .social-icons .fa-brands::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, transparent, rgba(88, 166, 255, 0.1));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+} */
+.social-icons .fa-brands::before {
+  opacity: 1;
+}
+.social-icons .fa-brands:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(88, 166, 255, 0.4);
+}
+.fa-brands.fa-github {
+  text-decoration: none;
+  color: #03070c;
+  box-shadow: 0 8px 25px rgba(240, 246, 252, 0.2),
+    0 0 0 1px rgba(240, 246, 252, 0.3);
+}
+.fa-brands.fa-whatsapp {
+  color: #10a848;
+  box-shadow: 0 8px 25px rgba(10, 102, 194, 0.2),
+    0 0 0 1px rgba(10, 102, 194, 0.3);
+}
+.fa-brands.fa-linkedin {
+  color: #065bb0;
+  box-shadow: 0 8px 25px rgba(10, 102, 194, 0.2),
+    0 0 0 1px rgba(10, 102, 194, 0.3);
 }
 
 /* =========image section styling============ */
