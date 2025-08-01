@@ -652,3 +652,112 @@ main {
 .detail-value {
   color: #f0f6fc;
 }
+/* =========skills section styling======= */
+.languages-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+.skill-card {
+  background: linear-gradient(135deg, #161b22 0%, #1c2128);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(88, 166, 255, 0.1);
+  transition: all 0, 3s ease;
+}
+.skill-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(88, 166, 255, 0.2);
+}
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.skill-name {
+  font-size: 1.3rem;
+  color: #f0f6fc;
+}
+.skill-level {
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+.skill-level.expert {
+  background: rgba(43, 167, 76, 0.2);
+  color: #2ba74c;
+  border: 1px solid rgba(43, 167, 76, 0.3);
+}
+.skill-level.advanced {
+  background: rgba(88, 166, 255, 0.2);
+  color: #58a6ff;
+  border: 1px solid rgba(88, 166, 255, 0.3);
+}
+.skill-level.intermediate {
+  background: rgba(255, 215, 0, 0.2);
+  color: #ffd700;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+}
+.skill-progress {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.progress-bar {
+  flex: 1;
+  height: 8px;
+  background: rgba(139, 148, 158, 0.2);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #2ba74c, #58a6ff);
+  border-radius: 4px;
+  transition: width 0.8s ease;
+  position: relative;
+}
+.progress-fill::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3));
+  animation: shimmer 4s infinite;
+}
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+.progress-percentage {
+  font-family: "JetBraina Mono", monospace;
+  color: #58a6ff;
+  font-weight: 600;
+  min-width: 40px;
+}
+.skill-description {
+  color: #8b949e;
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
