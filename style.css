@@ -430,3 +430,34 @@ main {
 .item-image:hover {
   filter: grayscale(0%) contrast(1.2);
 }
+
+/* ============ubuntu style page headers============== */
+.page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem 0;
+}
+.page-title {
+  font-family: "JetBrains Mono", monospace;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  color: #2ba74c;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 20px rgba(59, 197, 96, 0.3);
+}
+.command-prompt {
+  color: #58a6ff;
+  font-weight: 400;
+}
+.page-subtitle {
+  font-size: 1.5rem;
+  color: #8b949e;
+  font-weight: 300;
+}
+.section-title {
+  font-size: 1.8rem;
+  color: #f0f6fc;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
