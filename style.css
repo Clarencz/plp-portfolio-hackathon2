@@ -15,7 +15,7 @@ body {
   overflow-x: hidden;
   background: #0d1117;
   color: #c9d1d9;
-  font-size: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     sans-serif;
   line-height: 1.6;
   min-height: 100vh;
@@ -458,6 +458,107 @@ main {
   color: #f0f6fc;
   margin-bottom: 2rem;
   display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+/* ============projects section============== */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+}
+.project-card {
+  background: linear-gradient(135deg, #161b22 0%, #1c2128 100%);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(94, 156, 227, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.project-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #2ba74c, #58a6ff, #2ba74c);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+.project-card:hover::before {
+  transform: scaleX(1);
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(88, 149, 214, 0.2);
+}
+.project-header {
+  margin-bottom: 1.5rem;
+}
+.project-title {
+  font-size: 1.4rem;
+  color: #f0f6fc;
+  margin-bottom: 1rem;
+}
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.tag {
+  background: rgba(88, 166, 255, 0.1);
+  color: #58a6ff;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid rgba(88, 166, 255, 0.2);
+  transition: all 0.3s ease;
+}
+.tag:hover {
+  background: rgba(88, 166, 255, 0.2);
+  transform: scale(1.05);
+}
+.project-content {
+  margin-bottom: 1.5rem;
+}
+.project-description {
+  color: #c9d1d9;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+.project-features h3 {
+  color: #f0f6fc;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.project-features ul {
+  list-style: none;
+  padding-left: 0;
+}
+.project-features li {
+  color: #8b949e;
+  margin-bottom: 0.3rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+.project-features li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #2ba74c;
+  font-size: 0.8rem;
+}
+.project-footer {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.project-link {
+  display: inline-flex;
   align-items: center;
   gap: 0.5rem;
 }
