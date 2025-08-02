@@ -891,7 +891,7 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   }
   .skills-grid {
-    grid-template-columns: repeat(auto-fit, minmax_(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
 /* ============mobile like devices========== */
