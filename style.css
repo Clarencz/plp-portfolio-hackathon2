@@ -254,6 +254,7 @@ main {
   color: #58a6ff;
   margin-bottom: 1rem;
   font-size: 1.1rem;
+  font-weight: bolder;
 }
 .caret {
   display: inline-block;
