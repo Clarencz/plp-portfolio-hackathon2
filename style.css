@@ -299,7 +299,7 @@ main {
   font-family: "JetBrains Mono" monospace;
   color: #58a6ff;
   margin-bottom: 1rem;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   font-weight: bolder;
 }
 .caret {
@@ -996,10 +996,10 @@ main {
   }
   .command-text,
   .command-output {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   .whoami-text {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     padding: 0.8rem;
   }
   .action-row {
@@ -1080,10 +1080,10 @@ main {
   }
   .command-text,
   .command-output {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   .whoami-text {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
   .btn.download {
     padding: 0.6rem 1rem;
