@@ -54,7 +54,7 @@ h6 {
 a {
   color: #58a6ff;
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease box-shadow 0.2s ease;
 }
 a:hover {
   color: #79c0ff;
@@ -364,13 +364,13 @@ main {
 .fa-brands.fa-github {
   text-decoration: none;
   color: #03070c;
-  box-shadow: 0 8px 25px rgba(240, 246, 252, 0.2),
-    0 0 0 1px rgba(240, 246, 252, 0.3);
+  box-shadow: 0 8px 25px rgba(21, 23, 39, 0.2),
+    0 0 0 1px rgba(104, 113, 168, 0.3);
 }
 .fa-brands.fa-whatsapp {
   color: #10a848;
-  box-shadow: 0 8px 25px rgba(10, 102, 194, 0.2),
-    0 0 0 1px rgba(10, 102, 194, 0.3);
+  box-shadow: 0 8px 25px rgba(21, 207, 64, 0.2),
+    0 0 0 1px rgba(105, 168, 95, 0.3);
 }
 .fa-brands.fa-linkedin {
   color: #065bb0;
